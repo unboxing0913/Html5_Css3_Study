@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+body{
+	background-color:#fff;
+}
+
+form fieldset{
+	margin-bottom:20px /*fieldset의 아래쪽공간 */
+}
+form legend{
+   font-size:15px;
+   font-weight:600; 
+}
+                 
+form label.reg{ /*클래스접근 .*/
+	font-size:14px;
+	font-weight:bold;
+	width:150px;
+	float:left; /*어디에 위치할것인지 */
+	color:#390;
+	text-align:right; /*라벨안에있는 글자 위치 */
+	margin-right:10px; /*라벨옆의 공간*/
+}
+
+form ul li{ 
+	list-style:none;
+	margin:15px 0px;
+	font-size:14px;
+
+} 
+
+#member,#stuffs{
+    width:50px;    
+}
+
+
+</style>
+</head>
+<body>
+	<h1>겨울방학 특강 신청</h1>
+	<form action="">
+		<fieldset id="subject">
+			<legend>수강제목</legend>
+			<ul>
+				<li><label class="reg" for="subj">JAVA(초급)</label> 
+				<input type="text" id="subj" value="오전 9:00~11:00" readonly> <!-- 바꿀수없게(입력도안됨)  -->
+				</li>
+			</ul>
+		</fieldset>
+		
+		<fieldset id="register">
+			<legend>신청자</legend>
+			<ul>
+				<li><label class="reg" for="uname">이름</label> 
+				<input type="text" id="uname" autofocus required>
+				</li>                         <!--  이름먼저 쓰게끔 집중시킴 -->
+				
+				<li><label class="reg" for="uid">학번</label> 
+				<input type="text" id="uid" placeholder="하이폰 없이 입력" maxlength="8" required>
+				</li>                       <!-- placeholder 흐린한글씨, maxlength 최대길이 , required 입력을 할수있게-->
+				
+				<li><label class="reg" for="uclass">학과</label> 
+				<select id="uclass">
+					<option value="archi">건축공학과</option>
+					<option value="machine">기계공학과</option>
+					<option value="indust">산업공학과</option>
+					<option value="elec">전기전자공학과</option>
+					<option value="computer" selected>컴퓨터공학과</option> <!-- selected 첫 화면에 보이게끔 -->
+					<option value="chemcal">화학공학과</option>
+				</select>
+				</li>
+			</ul>
+		</fieldset>
+		<fieldset>	
+			<legend>교재 주문</legend>
+			<ul>
+			<li>
+				<label class="reg" for="book">교재</label>
+				<input type="number" id="book" value="1" min="1" max="3">
+			</li>
+			<li>
+				<label class="reg" for="wsheet">워크시트</label>
+				<input type="number" id="wsheet" value="1" min="1" max="3">
+			</li>
+			<li>
+				<label class="reg" for="group">단체주문</label>
+				<input type="number" id="group" value="10" min="10" max="100" step="10">
+			</li>
+			</ul>
+       </fieldset>
+       <fieldset> <!-- button이 input type="button"보다 디자인적으로 더 많은기능 (자동submit) -->
+               <button type="submit" value="submit">신청하기</button>
+               <button type="reset" value="reset">다시쓰기</button>      
+       </fieldset>
+	</form>
+</body>
+</html>

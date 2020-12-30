@@ -1,0 +1,46 @@
+/*외부파일 불러올땐 <style> 적용안시키나*/ 
+	 
+	
+	.container{
+		width:600px;
+		margin: 0 auto; /*auto 수평*/				
+	}
+			
+	
+	h1{
+		text-align: center;
+    }
+	 
+	ul{
+		list-style-type:none;
+		/*정석*/
+	}
+	
+	label.title{
+		font-weight:bold; 
+		width:80px;
+		float:left;
+	}
+	
+	div.centered{
+		text-align:center;
+	}
+	
+	fieldset {
+		margin:15px 10px;
+		
+	}
+	
+	fieldset legend{
+		font-weight:bold;
+		font-size: 18px;
+		color:purple;	
+		
+
+	}
+	
+	ul li{
+		margin-bottom:10px;	
+  	}
+  	
+/* </style> */

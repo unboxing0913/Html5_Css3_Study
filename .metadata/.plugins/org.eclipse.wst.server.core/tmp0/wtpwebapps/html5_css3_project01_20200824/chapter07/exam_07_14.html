@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+.content{
+	border:1px solid #ccc;
+	width:300px;
+	white-space: nowrap; /*줄바꿈 없음(width 크기를 넘어감) */
+	overflow:hidden; /*width를 초과하는부분은 삭제*/
+	text-overflow: ellipsis; /* clip */
+}
+.content:hover{ /*마우스를 위치했을때*/
+	overflow:visible; /*overflow:hidden된 부분을 보여줌*/
+}
+
+</style>
+</head>
+<body>
+<h2>귀리(Oat)</h2>
+<p class="content">귀리는 베타글루칸(항암 및 면역증강 작용을 가지고 있는 불소화성 다당류)성분을 포함하고 있다.</p> 
+</body>
+</html>

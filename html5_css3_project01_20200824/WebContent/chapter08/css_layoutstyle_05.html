@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+
+/*width,height*/
+	.div-size{
+		border:3px solid black;
+		height:200px
+	}
+	/*고정크기*/
+	#test1{
+		width:400px;
+	}
+	/*가변크기*/
+	#test2{
+		width:50%
+	}
+	
+	.block{
+		width:150px;
+		height:150px;
+		border:1px solid black;
+		color:black;
+	}
+	
+	.area1{
+		background: gold;
+	}
+	.area2{
+		background: yellow;
+	}
+	.area3{
+		background: pink;
+	}
+	.area4{
+		background: green;
+	}
+	.area5{
+		background: lightcyan;
+	}
+/*화면 배치 방법*/
+
+	/*블럭속성을 인라인속성으로*/
+	.block-test{
+		display:inline;
+	}
+	/*블록태그 크기 유지하면서 인라인처럼 배치*/
+	.block-test2{
+		display:inline-block;
+	}
+	/*인라인속성을 블럭속성으로*/
+	.inline-test{
+		display: block;
+	}
+</style>
+</head>
+<body>
+	<h1>레이아웃 스타일1</h1>
+	<h3>width,height</h3>
+	<p>해당 요소가 차지하는 가로,세로 길이</p>
+	<h4>고정 크기</h4>
+	<div id="test1" class="div-size"></div>
+	<h4>가변 크기</h4>
+	<div id="test2" class="div-size"></div>
+	<h3>화면 배치 방법</h3>
+	
+	<p>블럭 속성을 인라인 속성으로, 인라인 속성을 블럭 속성으로 변경 할 수 있다.</p>
+	<!-- class 안에서의 공백을 주면 그 공백만큼의 속성값으로 style 활용가능 -->
+	<div class="block block-test area1">첫번째 영역</div>
+	<div class="block block-test area2">두번째 영역</div>
+	<div class="block block-test area3">세번째 영역</div>
+	<div class="block block-test area4">네번째 영역</div>
+	<div class="block block-test area5">다섯번째 영역</div>
+	<!--                                                  -->
+	<h4>inline-block : 블록태그의 크기를 그대로 유지하면서 inline처럼 배치하는 방식</h4>
+	
+	<div class="block block-test2 area1">첫번째 영역</div>
+	<div class="block block-test2 area2">두번째 영역</div>
+	<div class="block block-test2 area3">세번째 영역</div>
+	<div class="block block-test2 area4">네번째 영역</div>
+	<div class="block block-test2 area5">다섯번째 영역</div>
+	<!--                                                  -->
+	<h4>인라인 속성의 태그를 블럭 속성의 태그처럼 배치하기</h4>
+	
+	<span class="block inline-test area1">첫번째 영역</span>
+	<span class="block inline-test area2">두번째 영역</span>
+	<span class="block inline-test area3">세번째 영역</span>
+ 	<span class="block inline-test area4">네번째 영역</span>
+	<span class="block inline-test area5">다섯번째 영역</span>
+</body>
+</html>

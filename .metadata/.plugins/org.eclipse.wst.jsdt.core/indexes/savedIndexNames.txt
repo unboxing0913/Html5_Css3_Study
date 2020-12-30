@@ -1,0 +1,14 @@
+INDEX VERSION 1.4+C:\it\html5_css3_lecture\html5_css5_workspace\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+3969869096.index
+3417817983.index
+2317085643.index
+1156837855.index
+1439913692.index
+1550129911.index
+3165713385.index
+632922707.index
+2545718266.index
+1582097845.index
+584345162.index
+319994481.index
+3436840806.index

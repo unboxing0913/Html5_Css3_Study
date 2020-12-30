@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+h1{
+	font-size:40px;
+}
+.letter1{
+	letter-spacing: 0.2em; /*자간 (글자간격)*/
+}  /*body태그(h1의 부모태그)에 크기지정을 하지않았기때문에 기본의 0.2em으로 증가*/
+.letter2{
+	letter-spacing: 0.5em;
+}
+.letter3{
+	letter-spacing: 8px; /*글자체가 바뀌면 em은 글자체만큼 비율이바뀌지만 px단위는 그픽셀만큼만 */
+}
+</style>
+</head>
+<body>
+	<h1>HTML5</h1>
+	<h1 class="letter1">HTML5</h1>
+	<h1 class="letter2">HTML5</h1>
+
+</body>
+</html>

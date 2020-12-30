@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="ExternalProjectImportWizard">
+		<item key="WizardProjectsImportPage.STORE_ARCHIVE_SELECTED" value="true"/>
+		<item key="WizardProjectsImportPage.STORE_CLOSE_CREATED_PROJECTS_ID" value="false"/>
+		<item key="WizardProjectsImportPage.STORE_HIDE_CONFLICTING_PROJECTS_ID" value="false"/>
+		<list key="WizardProjectsImportPage.STORE_DIRECTORIES">
+			<item value="C:\it\html5_css3_lecture\html5_css5_workspace\Servers"/>
+			<item value=""/>
+			<item value="C:\it\html5_css3_lecture\html5_css5_workspace\Servers\Tomcat v8.5 Server at localhost-config"/>
+		</list>
+		<list key="WizardProjectsImportPage.STORE_ARCHIVES">
+			<item value="C:\Users\김민수\Desktop\html,css.zip"/>
+			<item value="C:\Users\김민수\Desktop\1104.zip"/>
+			<item value="C:\Users\김민수\Desktop\1103.zip"/>
+			<item value="C:\Users\김민수\Desktop\1102.zip"/>
+			<item value="C:\Users\김민수\Desktop\1030.zip"/>
+			<item value="C:\Users\김민수\Desktop\1029.zip"/>
+			<item value="C:\Users\김민수\Desktop\1028.zip"/>
+			<item value="C:\Users\김민수\Desktop\1027.zip"/>
+		</list>
+	</section>
+</section>

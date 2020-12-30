@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+/* 우선순위 테스트1 */
+div{
+	width: 300px;
+	height: 300px;
+	background:lightgray;
+}
+/* 겹치는 속성만 덮어 씌워진다.*/
+.test1{
+	background : yellowgreen;
+	color:white;	
+}
+.test1{
+	background : tomato;
+}
+.test2{
+	background: skyblue;
+	color: rebeccapurple;
+	font-size : 2em;
+}
+p{
+	background: forestgreen  !important;
+	color : black !important;
+	                /* !important 를 사용하면 우선순위를 먼저 설정할수있다.*/
+}
+</style>
+</head>
+<body>
+<h1>선택자 우선 순위</h1>
+<p>
+	CSS에서는 기본적으로 위에서 아래로 코드를 적용하기<br>때문에 같은 태그에
+	속성이 여러번 적용 될 수 있다.<br>이 경우 가장 마지막에 설정을 한 스타일의
+	내용이 <br>실제 태그에 적용하게 된다.<br>
+	* 단, CSS 기준의 적용 우선 순위가 있을 경우 <br>해당 우선 순위에 따라 
+	CSS가 덥어 씌워진다.</p>
+	
+	<pre>
+		< : &lt;
+		> : &gt;
+		태그 선택자 &lt; 클래스 선택자 &lt; 아이디 선택자 &lt;
+		인라인 선택자 &lt; !important
+		순으로 우선권을 가진다.
+	</pre>
+	<h2>우선순위 테스트</h2>
+	<div id="test1" class="test1" style="background:red; color:black;">우선 순위 테스트 1입니다.</div>
+	<h2>우선순위 테스트2</h2>
+	<p id="test2" class="test2" style="background:hotpink; color:white;">우선 순위 테스트 2입니다.</p>
+	
+</body>
+</html>

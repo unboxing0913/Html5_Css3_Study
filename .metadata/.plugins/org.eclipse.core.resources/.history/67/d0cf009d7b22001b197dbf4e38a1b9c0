@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+
+/* 일반 구조 선택자 */
+/* 형제 관계 중 첫번째 태그 선택하기 */
+#test1 p:first-child{
+	background:orange;
+}
+
+/* 형제 관계 중 마지막 태그 선택하기 */
+#test1 *:Last-child { 
+	background:palegreen;
+	color:black;
+}
+
+/* 형제 관계 중 n번째에 위치한 태그 선택하기*/
+#test1 p:nth-child(2n) { /* (2n)짝수 (2)두번째것 */
+	background:palegreen;
+	color:black;
+}
+
+/* 형제 관계 중 뒤에서 n번째 태그 선택하기*/
+#test1 p:nth-last-child(4) {
+	background: beige;
+	color:blueviolet;
+}
+/**************************************************************/
+
+/* 형태 구조 선택자(태그의 타입을 검사한다) */
+/* 형제 태그 중 첫번째 p태그 선택하기 */
+#test2 p:first-of-type {
+	background:yellow;
+	color:olive;
+}
+
+/* 형제 태그 중 마지막 p태그 선택하기 */
+#test2 p:last-of-type{
+	background:darkgreen;
+	color:white;
+}
+
+/* 형제 태그 중 n번째 p태그 선택하기 */
+#test2 p:nth-of-type(2n) { /*형제 태그의 p태그 타입만 */
+	background:coral; 
+	color:blue;
+}
+
+/* 형제 태그 중 뒤에서 n번째 p태그*/
+#test2 p:nth-last-of-type(3) {
+	background:cornsilk;
+	color:crimson;
+}
+/**************************************************************/
+
+/* 문자 선택자 */
+/* 문단의 첫번째 줄 선택하기*/
+#test3 p:first-line{
+	background: lightgoldenrodyellow;
+}
+
+/* 각 태그 별 자동 번호 매김 처리하기*/ 
+#test3 p{
+	counter-increment: rint;
+}
+
+/* 태그 앞 공간 선택하기 */        
+#test3 p:before{
+	content:counter(rint)".";
+	/*p를 counter-incremant:rint 를 해줘야 번호순 사용가능*/
+}
+
+/* 태그 뒷 공간 선택하기 */        
+#test3 p:after {
+	content:"-by korea class"; 
+}
+
+/* 드래그한 글자 블록 색 변경하기*/
+#test3 p::selection{
+	background:chocolate;
+	color:skyblue;
+}
+
+/* 부정 선택자 */
+#test4 p:not(:nth-child(3n)){
+	background:brown;
+	color:snow;
+}
+</style>
+</head>
+<body>
+<h1>CSS 기본 선택자 3</h1>
+<hr>
+
+<h2>일반 구조 선택자</h2>
+<p>특정 위치에 있는 요소(태그)를 선택할 때 사용한다</p>
+<div id="test1">
+	<p>테스트1</p>
+	<p>테스트2</p>
+	<p>테스트3</p>
+	<p>테스트4</p>
+	<p>테스트5</p>	
+	<pre>테스트6</pre>
+</div>
+<h2>형태 구조 선택자</h2>
+<p>특정 위치의 태그를 선택</p>
+
+<div id="test2">
+	<p>테스트1</p>
+	<p>테스트2</p>
+	<p>테스트3</p>
+	<p>테스트4</p>
+	<p>테스트5</p>
+	<pre>테스트6</pre>
+	</div>
+	
+	<h2>문자 선택자</h2>
+	<p>해당 태그 내부의 특정 문자열을 선택하는 방법</p>
+	<div id="test3">
+		<p>국회가 재적인원의 과반수의 찬성으로 계엄의 해제를 요구한 때에는
+		대통령은 이를 해제하여야 한다.제 1항의 지시를 받은 당해 행정기관은
+		이에 응하여야 한다. 대통령의 임기가 만료되는 때에는 임기만료 70일
+		내지 40일 전에 후임자를 선거한다.대법관은 국회의 동의를 얻어 대통령이
+		임명한다.</p>
+		<p>국회가 재적인원의 과반수의 찬성으로 계엄의 해제를 요구한 때에는
+		대통령은 이를 해제하여야 한다.제 1항의 지시를 받은 당해 행정기관은
+		이에 응하여야 한다. 대통령의 임기가 만료되는 때에는 임기만료 70일
+		내지 40일 전에 후임자를 선거한다.대법관은 국회의 동의를 얻어 대통령이
+		임명한다.</p>
+	</div>
+	
+	<hr>
+	
+	<h2>부정 선택자</h2>
+	<p>선택한 요소를 제외한 나머지를 선택하는 선택자이다</p>
+		<div id="test4">
+			<p>테스트1</p>
+			<p>테스트2</p>
+			<p>테스트3</p>
+			<p>테스트4</p>
+			<p>테스트5</p>
+		</div>
+
+</body>
+</html>
